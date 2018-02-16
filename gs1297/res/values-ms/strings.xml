@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_unknown_issue">%1$s menghadapi masalah berhubung perkhidmatan Google Play. Sila cuba lagi.</string>
+    <string name="common_google_play_services_enable_button">Dayakan</string>
+    <string name="common_google_play_services_enable_text">%1$s tidak akan berfungsi melainkan anda mendayakan perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_enable_title">Dayakan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_install_button">Pasang</string>
+    <string name="common_google_play_services_install_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tiada pada peranti anda.</string>
+    <string name="common_google_play_services_install_title">Dapatkan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ralat perkhidmatan Google Play</string>
+    <string name="common_google_play_services_unsupported_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tidak disokong oleh peranti anda.</string>
+    <string name="common_google_play_services_update_button">Kemas kini</string>
+    <string name="common_google_play_services_update_text">%1$s tidak akan berfungsi kecuali anda mengemas kini perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_update_title">Kemaskinikan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini sedang dikemaskinikan.</string>
+    <string name="common_google_play_services_wear_update_text">Versi baharu perkhidmatan Google Play diperlukan. Kemas kini automatik akan dijalankan sebentar lagi.</string>
+    <string name="common_open_on_phone">Buka pada telefon</string>
+    <string name="common_signin_button_text">Log masuk</string>
+    <string name="common_signin_button_text_long">Log masuk dengan Google</string>
+    <string name="accept">Terima</string>
+    <string name="create_calendar_message">Benarkan Iklan membuat acara kalendar?</string>
+    <string name="create_calendar_title">Buat acara kalendar</string>
+    <string name="debug_menu_ad_information">Maklumat Iklan</string>
+    <string name="debug_menu_creative_preview">Pratonton Kreatif</string>
+    <string name="debug_menu_title">Pilih Mod Nyahpepijat</string>
+    <string name="debug_menu_troubleshooting">Selesaikan masalah</string>
+    <string name="decline">Tolak</string>
+    <string name="store_picture_message">Benarkan Iklan menyimpan imej dalam galeri Gambar?</string>
+    <string name="store_picture_title">Simpan imej</string>
+    <string name="com_facebook_image_download_unknown_error">Ralat tidak dijangka ketika memuat turun imej.</string>
+    <string name="com_facebook_internet_permission_error_message">Log masuk WebView memerlukan kebenaran INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Ralat AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Disukai</string>
+    <string name="com_facebook_like_button_not_liked">Suka</string>
+    <string name="com_facebook_loading">Memuatkan...</string>
+    <string name="com_facebook_loginview_cancel_action">Batal</string>
+    <string name="com_facebook_loginview_log_in_button">Log masuk</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log masuk dengan Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log keluar</string>
+    <string name="com_facebook_loginview_log_out_button">Log keluar</string>
+    <string name="com_facebook_loginview_logged_in_as">Dilog masuk sebagai: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Dilog masuk menggunakan Facebook</string>
+    <string name="com_facebook_send_button_text">Hantar</string>
+    <string name="com_facebook_share_button_text">Kongsi</string>
+    <string name="com_facebook_tooltip_default">Baru! Anda yang mengawal - pilih maklumat yang anda ingin kongsi dengan aplikasi.</string>
+    <string name="messenger_send_button_text">Hantar</string>
+</resources>
