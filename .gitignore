@@ -1,0 +1,5 @@
+*.class
+*.jdb2
+*.swp
+decFile
+decString

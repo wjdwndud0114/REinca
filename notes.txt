@@ -1,0 +1,9 @@
+AppGuardEngine:
+	6933 -> decrypt call to libengine
+	invoke-virtual {v4, v0, v5, v6}, Lcom/inca/security/lb;->IiiiIIIIii(Ljava/lang/String;Ljava/lang/String;[B)Z
+
+	3889 -> decrypt call to libstub
+	invoke-virtual {v5, v10, v11, v12}, Lcom/inca/security/lb;->IiiiIIIIii(Ljava/lang/String;Ljava/lang/String;[B)Z
+	
+lb:
+	decrypt function @ 2947 .method public synthetic IiiiIIIIii(Ljava/lang/String;Ljava/lang/String;[B)Z
