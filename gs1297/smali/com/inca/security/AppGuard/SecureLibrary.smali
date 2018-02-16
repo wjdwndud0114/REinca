@@ -1,6 +1,6 @@
 .class public Lcom/inca/security/AppGuard/SecureLibrary;
 .super Ljava/lang/Object;
-.source "hb"
+.source "hb" #hb
 
 
 # static fields
@@ -56,13 +56,13 @@
     if-nez v0, :cond_0
 
     .line 56
-    const-string v0, "8&\u00086\u0019&\'*\t1\n1\u0012"
+    const-string v0, "8&\u00086\u0019&\'*\t1\n1\u0012" #SecureLibrary
 
     invoke-static {v0}, Lcom/inca/security/ib;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "\n.\t+\u0016)\r$\n6\u0010/\u0011$\u00154\u0018?\u001c)y\u0012*[7\u0014-[-\t,\u001ew"
+    const-string v1, "\n.\t+\u0016)\r$\n6\u0010/\u0011$\u00154\u0018?\u001c)y\u0012*[7\u0014-[-\t,\u001ew" #SUPPORT_SMITH_LOADER is not true.
 
     invoke-static {v1}, Lcom/inca/security/tb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -79,7 +79,7 @@
     .line 106
     new-instance v0, Lcom/inca/security/oc;
 
-    const-string v1, "/\u0002!\n.\u001bm\u0018,\u0013"
+    const-string v1, "/\u0002!\n.\u001bm\u0018,\u0013" #libamp.sox
 
     invoke-static {v1}, Lcom/inca/security/ib;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -105,7 +105,7 @@
     .line 96
     new-instance v1, Lcom/inca/security/Exception/AppGuardException;
 
-    const-string v2, "<\u0003:\u001e)\u000f0\u00147"
+    const-string v2, "<\u0003:\u001e)\u000f0\u00147" #exception
 
     invoke-static {v2}, Lcom/inca/security/tb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -138,7 +138,7 @@
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
-    const-string v1, "\u0016\u00193\u001e:\u000f\u001f\u001a:\u000f6\t "
+    const-string v1, "\u0016\u00193\u001e:\u000f\u001f\u001a:\u000f6\t " #ObjectFactory
 
     invoke-static {v1}, Lcom/inca/security/tb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -175,7 +175,7 @@
     :cond_1
     sget-object v0, Lcom/inca/security/AppGuard/SecureLibrary;->IiIiIiiIii:Lcom/inca/security/oc;
 
-    const-string v1, "\u0008,\u0006m\u0002-\u0008\"E0\u000e \u001e1\u00027\u0012m\'*\t1\n1\u0012m$!\u0001&\u00087-\"\u00087\u00041\u0012"
+    const-string v1, "\u0008,\u0006m\u0002-\u0008\"E0\u000e \u001e1\u00027\u0012m\'*\t1\n1\u0012m$!\u0001&\u00087-\"\u00087\u00041\u0012" #com.inca.security.Library.ObjectFactory
 
     invoke-static {v1}, Lcom/inca/security/ib;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -191,7 +191,7 @@
     :cond_2
     new-instance v0, Ljava/lang/String;
 
-    const-string v1, "4;\u0011<\u0018-27\u000f<\u001c+\u0012-\u0002\u0014\u001a7\u001a>\u001e+"
+    const-string v1, "4;\u0011<\u0018-27\u000f<\u001c+\u0012-\u0002\u0014\u001a7\u001a>\u001e+" #ObjectIntegrityManager
 
     invoke-static {v1}, Lcom/inca/security/tb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -239,7 +239,7 @@
     .line 25
     new-instance v1, Lcom/inca/security/Exception/AppGuardException;
 
-    const-string v2, "<\u0003:\u001e)\u000f0\u00147"
+    const-string v2, "<\u0003:\u001e)\u000f0\u00147" #exception
 
     invoke-static {v2}, Lcom/inca/security/tb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -258,7 +258,7 @@
     :try_start_1
     sget-object v0, Lcom/inca/security/AppGuard/SecureLibrary;->IiIiIiiIii:Lcom/inca/security/oc;
 
-    const-string v1, " \u0004.E*\u0005 \nm\u0018&\u00086\u0019*\u001f:E\u000f\u0002!\u0019\"\u0019:E\u000c\t)\u000e \u001f\n\u00057\u000e$\u0019*\u001f:&\"\u0005\"\u000c&\u0019"
+    const-string v1, " \u0004.E*\u0005 \nm\u0018&\u00086\u0019*\u001f:E\u000f\u0002!\u0019\"\u0019:E\u000c\t)\u000e \u001f\n\u00057\u000e$\u0019*\u001f:&\"\u0005\"\u000c&\u0019" #com.inca.security.Library.ObjectIntegrityManager
 
     invoke-static {v1}, Lcom/inca/security/ib;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 

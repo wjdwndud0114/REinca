@@ -96,7 +96,7 @@
     move-result-object v0
 
     .line 190
-    const-string v2, "\"D\u0019X$G\u001aC#N\"]>"
+    const-string v2, "\"D\u0019X$G\u001aC#N\"]>" #onTrimWindows
 
     invoke-static {v2}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -187,7 +187,7 @@
     move-result-object v0
 
     .line 160
-    const-string v2, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019"
+    const-string v2, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019" #onTrimWindows
 
     invoke-static {v2}, Lcom/inca/security/la;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -280,7 +280,7 @@
     move-result-object v0
 
     .line 161
-    const-string v1, "\"D\u0019X$G\u001aC#N\"]>"
+    const-string v1, "\"D\u0019X$G\u001aC#N\"]>" #onTrimWindows
 
     invoke-static {v1}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -362,7 +362,7 @@
     move-result-object v0
 
     .line 123
-    const-string v1, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019"
+    const-string v1, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019" #onTrimWindows
 
     invoke-static {v1}, Lcom/inca/security/la;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -461,7 +461,7 @@
     move-result-object v1
 
     .line 167
-    const-string v2, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019"
+    const-string v2, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019" #onTrimWindows
 
     invoke-static {v2}, Lcom/inca/security/la;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -542,7 +542,7 @@
     move-result-object v0
 
     .line 33
-    const-string v1, "\"D\u0019X$G\u001aC#N\"]>"
+    const-string v1, "\"D\u0019X$G\u001aC#N\"]>" #onTrimWindows
 
     invoke-static {v1}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -627,7 +627,7 @@
     move-result-object v0
 
     .line 170
-    const-string v1, "\"D\u0019X$G\u001aC#N\"]>"
+    const-string v1, "\"D\u0019X$G\u001aC#N\"]>" #onTrimWindows
 
     invoke-static {v1}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -708,7 +708,7 @@
     move-result-object v0
 
     .line 3
-    const-string v1, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019"
+    const-string v1, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019" #onTrimWindows
 
     invoke-static {v1}, Lcom/inca/security/la;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -809,7 +809,7 @@
     move-result-object v1
 
     .line 1
-    const-string v2, "\"D\u0019X$G\u001aC#N\"]>"
+    const-string v2, "\"D\u0019X$G\u001aC#N\"]>" #onTrimWindows
 
     invoke-static {v2}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -890,7 +890,7 @@
     move-result-object v0
 
     .line 39
-    const-string v1, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019"
+    const-string v1, "\u0005q>m\u0003r=v\u0004{\u0005h\u0019" #onTrimWindows
 
     invoke-static {v1}, Lcom/inca/security/la;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -971,7 +971,7 @@
     move-result-object v1
 
     .line 41
-    const-string v0, "\"D\u0019X$G\u001aC#N\"]>"
+    const-string v0, "\"D\u0019X$G\u001aC#N\"]>" #onTrimWindows
 
     invoke-static {v0}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -999,7 +999,7 @@
     move-result-object v0
 
     .line 158
-    const-string v1, "\tp\u00071\u0003q\t~Dl\u000f|\u001fm\u0003k\u00131+o\u001aX\u001f~\u0018{D^\u001ao-j\u000bm\u000eO\u0018p\u0012f\'~\u0004~\rz\u0018"
+    const-string v1, "\tp\u00071\u0003q\t~Dl\u000f|\u001fm\u0003k\u00131+o\u001aX\u001f~\u0018{D^\u001ao-j\u000bm\u000eO\u0018p\u0012f\'~\u0004~\rz\u0018" #com.inca.security.AppGuard.AppGuardProxyManager
 
     invoke-static {v1}, Lcom/inca/security/la;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1010,7 +1010,7 @@
     move-result-object v1
 
     .line 17
-    const-string v2, "9X,I(~\"_.B\u0008\\(D9"
+    const-string v2, "9X,I(~\"_.B\u0008\\(D9" #traceTouchEvent
 
     invoke-static {v2}, Lcom/inca/security/wb;->IiiiIIIIii(Ljava/lang/String;)Ljava/lang/String;
 

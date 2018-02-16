@@ -31,9 +31,33 @@ public class decryptString {
   }
 
   public static int[] getKeys(String c) {
-    if(c.equals("ib")) return new int[] {0x6B,0x43};
-    else if(c.equals("n")) return new int[] {0xF,0xD};
-    else return new int[] {0,0};
+    switch(c) {
+      case "ib":
+        return new int[] {0x6B,0x43};
+      case "n":
+        return new int[] {0xF,0xD};
+      case "la":
+        return new int[] {0x6A,0x1F};
+      case "wb":
+        return new int[] {0x4D,0x2A};
+      case "tb":
+        return new int[] {0x59,0x7B};
+      case "yc":
+        return new int[] {0x70,0x33};
+      case "ub":
+        return new int[] {0x34,0x1};
+      case "pb":
+        return new int[] {0x8,0x50};
+      case "fa":
+        return new int[] {0x23,0x50};
+      case "jb":
+        return new int[] {0x1b,0x2C};
+      case "ua":
+        return new int[] {0x4A,0x34};
+      case "x":
+        return new int[] {0x43,0x43};
+    }
+    return new int[] {0x00,0x00};
   }
 
   private static void write(String s, boolean n) {
