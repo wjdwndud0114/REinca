@@ -4,7 +4,7 @@ taking a look at inca's appGuard protection
 
 ## Encrypted strings
 
-The encrypted strings are handled by the classes ib and n located in com/inca/security.
+The encrypted strings are handled by several classes such as ib and n located in com/inca/security.
 You can see this when reading through the smali code,
 ```
 const-string v7, "\u0007.\u0017.\u0000?\u001c\"\r=\u0002\'\n/\u001c\'\n)\u00004\u0010$"
@@ -35,4 +35,9 @@ example:
 ```
 smali/com/inca/security/Cire/AppGuardEngine.smali
 ```
-
+Going based off previously written classes, I can decrypt a whole directory and
+any subfolders.
+```
+make decDir
+./decDir
+```
