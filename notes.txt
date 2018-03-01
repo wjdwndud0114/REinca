@@ -23,7 +23,6 @@ libcompatible.so:
 	
 	
 	
-WHEN ATTACHING TO SO AND DEX, attach so first, then run, then attach dex.
 
 
 ----------------
@@ -38,7 +37,8 @@ see that Java decrypts libstub.sox and loads it. -> possible anti-debugging??
 analyze the loading and decrpyting of libstub.so
 
 -debugging app
-  App loads libcompatible and forks before the mainactivity. 
+  App loads libcompatible and forks before the mainactivity -> in clinit of
+  proxyactivity
   Then does multidex stuff
   Then main activity -> need to look more into what happens because somewhere
 b/w main activity and appguardengine, libcompatible loaded again.

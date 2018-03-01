@@ -76,9 +76,9 @@ void* g_libstubso = NULL;
 void* new_dlopen(const char* filename, int myflags) {
 	LOGD("new_dlopen name :%s", filename);
 	//test
-	if (strstr(filename, "libcompatible.so"))
+	if (strstr(filename, "/data/app/net.supercat.stone-1.apk/assets/bin/Data/Managed/Assembly-CSharp.dll.so"))
 	{
-		sleep(50);
+		sleep(120);
 	}
 	LOGD("done waiting :%s", filename);
 
