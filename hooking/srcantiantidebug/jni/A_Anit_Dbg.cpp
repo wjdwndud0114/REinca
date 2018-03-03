@@ -76,9 +76,12 @@ void* g_libstubso = NULL;
 void* new_dlopen(const char* filename, int myflags) {
 	LOGD("new_dlopen name :%s", filename);
 	//test
-	if (strstr(filename, "/data/app/net.supercat.stone-1.apk/assets/bin/Data/Managed/Assembly-CSharp.dll.so"))
+	if (strstr(filename, "Assembly-CSharp.dll"))
 	{
-		sleep(120);
+		void* old = old_dlopen(filename, myflags);
+		LOGD("AssCSharp opened");
+		sleep(50);
+		LOGD("finished waiting for AssemblyCSHarp.");
 	}
 	LOGD("done waiting :%s", filename);
 
@@ -109,7 +112,6 @@ pid_t new_fork(void)
 	pid_t pid;
 	int ret;
 	char so_path[256] = {"/data/local/tmp/libhook.so"};
-	
 	pid = old_fork();
 	LOGD("[*] fork pid : %d\n", pid);
 	if (pid < 0)
@@ -118,10 +120,10 @@ pid_t new_fork(void)
 	}else if (0 == pid)
 	{
 		LOGD("[*] child fork pid : %d\n", pid);
-		/*LOGD("child fork--->setenv ----SO-->%s",so_path);
-		setenv("LD_PRELOAD",so_path, 1);//Set environment variables
-		ret = strcmp(so_path,so_path);
-		LOGD("strcmp----ret-->%d",ret);*/
+		//LOGD("child fork--->setenv ----SO-->%s",so_path);
+		//setenv("LD_PRELOAD",so_path, 1);//Set environment variables
+		//ret = strcmp(so_path,so_path);
+		//LOGD("strcmp----ret-->%d",ret);
 	}
 	return pid;
 }
@@ -148,16 +150,16 @@ exitret:
 }
 
 int new_ptrace(int request, int pid, int addr, int data){
-	//LOGD("new_ptrace..");
-	return 0;
-	if(request == PTRACE_TRACEME){
-		LOGD("[*] Traced-anti-PTRACE_TRACEME!");
-	}else if(request == PTRACE_ATTACH){
-		if(pid == getppid()){
-			LOGD("[*] Detect Traced-anti-ptrace attach parent! pid=%d ppid=%d",pid, getppid());
-		}
-	}
-	return old_ptrace(request, pid, addr, data);
+	if(request != 7) LOGD("new_ptrace.. req: %d; pid: %d, addr: %d, data: %d",request, pid, addr, data);
+	return -1;
+	//if(request == PTRACE_TRACEME){
+	//	LOGD("[*] Traced-anti-PTRACE_TRACEME!");
+	//}else if(request == PTRACE_ATTACH){
+	//	if(pid == getppid()){
+	//		LOGD("[*] Detect Traced-anti-ptrace attach parent! pid=%d ppid=%d",pid, getppid());
+	//	}
+	//}
+	//return old_ptrace(request, pid, addr, data);
 }
 
 

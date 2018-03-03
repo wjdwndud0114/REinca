@@ -51,3 +51,18 @@ libstub decryption
   native decryption key:
 {']','\0','\0','@','\0','\xA0','\x0F','\x05','\0','\xA0','\x0F','\x05','\0','\0','?','\x91','E','\x84','h',';','','','\xA6','\x11','','\x94','',')','&','V','i','\xA1','\xBC','^','\xBE','\xB9','','1','n','','j','f','','\xFB','\xBE','\xAA','','\x97','\xBE','',':','\x88','\x15','','%','\x15','\x89','I','m','\xA7','\x9C','=','','\xB7','\xAD',']','','','\xB0','\xF6','\x89','\xB9','\x1C','V','
 ','\x82','H','','j','','H','\xA2','',')','e','\xFD','','J','\x8C','','e','\xAD','\x88','x','','','\xFA','\xB4','S','d','','','N','Y','\xBE','\x96','','','J','','W','','','\xA2','\xB1','\x01','\x04','\x95','\xFE','','','\xAB','+','v','7','','\t','Q','','\xA8','','',',','m','\xFB','\x03','+','','\x98','\x8F','','\x86','M','c','\xA3','\x90','=','}','','\x1E','C','\\','E','','\x8D','','.','\x18','\xF7','K','','=','\xA1','n','\x8A','>','\x83','\xA1','','^','8','\xF8','\x02','\xF5','\xFF','\a','E','\x9E','\xA6','\x8C','','*','\xA3','\xBC','\xA6','E','','b','\xFA','','Y','','\xF3','\b','\xB5','','y','\x85','\x19','\x9D','&','','\b',
+
+
+
+Disable antidebugging with ptrace hooking return -1;
+use GG to dump memory -> find AssemblyCSharp from dump, fix header, dump.
+for v1298, file was in net.supercat.stone-91e3c000-b77bd000.bin, 00CE5000
+find AssemblyCSharp-firstpass too, v1298 -> 20000 in file net.supercat.stone-8feb7000-900bd000.bin
+
+broken CSharp file still.
+Comparing same functions from non broken file:
+	Animated Sprite:
+		new setter function header:
+			13300D0094000000110400114EA6BF8FDDD6928A4832CFA3A63ECAC9843F6FFA6EE25317C3DBD01EE06792A5124C805E540FDBC9C35F376386027B1F18B523CDF9E39BA8774BEC66C5094C1899FCAAD4142194B1AFBF36E9FAA2BB3E9F35DC263FACECDA0CFCEB57C99AFEFD689DE69D9447A84A38BE562A0FB8AE33AFC98395CCCE871A420823ACF600B2204F1000047BED1500046FA301000A6FF701000A2A
+		old setter function header:
+			13300D0094000000B5030011027B250E00040340010000002A02037D250E0004027B270E00040A027B290E00040B02147D270E00040206027B2F0E0004285818000626073A0600000002285A180006027B2D0E0004280F00000A3940000000027B250E00043935000000027B250E00047B4D120004280F00000A3920000000027B2D0E00046FBB0F000A027B250E00047B4D1200046FA301000A6FF701000A2A
