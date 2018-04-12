@@ -1,8 +1,12 @@
 # REinca
+
 taking a look at inca's appGuard protection
 ========
 
 ## Encrypted strings
+
+Most of the strings in the smali code is encrypted to delay reverse
+engineering, so I wrote a little program so I can read what is going on.
 
 The encrypted strings are handled by several classes such as ib and n located in com/inca/security.
 You can see this when reading through the smali code,
@@ -41,3 +45,18 @@ any subfolders.
 make decDir
 ./decDir
 ```
+
+## libcompatible
+
+So libcompatible.so include anti-debugging and loads up libstub.so which I think
+loads up Assembly-CSharp.dll and libengine.so with CRC and other stuff. Both of
+these so files are encrypted as .sox files.
+
+We need to debug the libcompatible.so with IDA and dump the so files mentioned,
+so we can debug those to figure out what those files do.
+
+### debugging libcompatible
+
+So this file runs an antidebugging technique with ptrace() to prevent debugging.
+This can be countered by hooking the ptrace method to return whatever we want.
+This is done with a Xposed frame work and a so used for hooking.

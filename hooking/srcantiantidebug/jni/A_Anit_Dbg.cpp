@@ -76,12 +76,12 @@ void* g_libstubso = NULL;
 void* new_dlopen(const char* filename, int myflags) {
 	LOGD("new_dlopen name :%s", filename);
 	//test
-	if (strstr(filename, "Assembly-CSharp.dll"))
+	if (strstr(filename, "compatible"))
 	{
 		void* old = old_dlopen(filename, myflags);
-		LOGD("AssCSharp opened");
+		LOGD("***SPECIAL FILE OPENED***");
 		sleep(50);
-		LOGD("finished waiting for AssemblyCSHarp.");
+		LOGD("***DONE WAITING FOR SPECIAL FILE***");
 	}
 	LOGD("done waiting :%s", filename);
 
